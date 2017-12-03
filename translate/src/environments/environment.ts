@@ -4,5 +4,11 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+    production: false,
+    apiKey: "AIzaSyDYEEjp_RDRLa40S5tpla4_LQYb37Sg08Q",
+    authDomain: "zsam-translate.firebaseapp.com",
+    databaseURL: "https://zsam-translate.firebaseio.com",
+    projectId: "zsam-translate",
+    storageBucket: "zsam-translate.appspot.com",
+    messagingSenderId: "614794353278"
 };
