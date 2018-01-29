@@ -13,9 +13,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 
+// Angular Fire imports
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+
+// Third party imports
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AuthPageModule } from './auth-page/auth-page.module';
 import { ChatroomPageModule } from './chatroom-page/chatroom-page.module';
@@ -49,10 +53,13 @@ let imports: any[] = [
     HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule,
+
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    FormsModule,
+
+    NgbModule,
 
     AuthPageModule,
     ChatroomPageModule
