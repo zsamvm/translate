@@ -12,7 +12,8 @@ import { PreloadAllModules, Routes, RouterModule } from '@angular/router';
 /**
  * Components import
  */
-import { AuthPageComponent } from './auth_page/auth-page.component';
+import { AuthPageComponent } from './auth-page/auth-page.component';
+import { ChatroomPageComponent } from './chatroom-page/chatroom-page.component';
 
 /**
  * @type {(
@@ -25,6 +26,10 @@ export const routes: Routes = [
     {
         path: 'auth',
         component: AuthPageComponent
+    },
+    {
+        path: 'chatroom',
+        component: ChatroomPageComponent
     }
 ];
 

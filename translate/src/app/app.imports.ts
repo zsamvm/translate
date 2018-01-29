@@ -17,7 +17,8 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
-import { AuthPageModule } from './auth_page/auth-page.module';
+import { AuthPageModule } from './auth-page/auth-page.module';
+import { ChatroomPageModule } from './chatroom-page/chatroom-page.module';
 
 /**
  * NgRx imports
@@ -53,7 +54,8 @@ let imports: any[] = [
     AngularFireAuthModule,
     FormsModule,
 
-    AuthPageModule
+    AuthPageModule,
+    ChatroomPageModule
 ];
 
 export const APP_IMPORTS = [...imports];
