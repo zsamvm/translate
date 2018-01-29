@@ -1,0 +1,11 @@
+<p>common chat page</p>
+<p>You are logged in, email: {{email}}</p>
+<div *ngFor="let msg of chatMsgsObs | async">
+   {{ msg | json}}
+</div>
+<input
+      type="text"
+      class="form-control"
+      id="chatInput"
+      name="chatInput"
+      [(ngModel)]="chatInput">
